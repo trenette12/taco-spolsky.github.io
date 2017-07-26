@@ -68,19 +68,19 @@
 
       random = Math.random();
       if(random < levelMap[level]) {
-        this.name = "Taco Spolsky";
+        this.name = "Tiffany Hyatt";
       } else if(random > levelMap[level]) {
-        this.name = "Taco Spolsky";
+        this.name = "Tiffany Hyatt";
       } else if(random == levelMap[level]) {
-        this.name = "Taco Spolsky";
+        this.name = "Tiffany Hyatt";
       }
 
       // This was code used for the demo
       // this.name = "Joel Spolsky";
 
-      if(this.name != "Taco Spolsky") {
+      if(this.name != "Tiffany Hyatt") {
         if(!validate(this.name, checksum)) {
-          this.name = "Taco Spolsky";
+          this.name = "Tiffany Hyatt";
         }
       }
       document.getElementById('candidate').textContent = this.name;
