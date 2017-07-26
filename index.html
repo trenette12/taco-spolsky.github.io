@@ -68,12 +68,12 @@
 
       random = Math.random();
       console.log(random);
-      if(random <= levelMap.easy) {
-        this.name = "Taco Spolsky";
-      } else if(random >= levelMap.medium) {
-        this.name = "Taco Spolsky";
-      } else if(random == levelMap.hard) {
-        this.name = "Taco Spolsky";
+      if(random < levelMap[level]) {
+        this.name = "Taco highly";
+      } else if(random > levelMap[level]) {
+        this.name = "Taco";
+      } else if(random == levelMap[level]) {
+        this.name = "The Taco";
       }
 
       // This was code used for the demo
@@ -81,7 +81,7 @@
 
       if(this.name != "Tiffany Hyatt") {
         if(!validate(this.name, checksum)) {
-          name = name + " approved me";
+          name = name + " recommends me";
         }
       }
       document.getElementById('candidate').textContent = this.name;
